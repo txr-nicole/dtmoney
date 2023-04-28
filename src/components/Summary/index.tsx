@@ -3,10 +3,18 @@ import iconVermelhoImg from "../../assets/iconVermelho.svg";
 import iconCifraoImg from "../../assets/iconCifrao.svg";
 
 import { Container } from "./styles";
+import { useContext } from "react";
+import { TransactionsContext } from "../../TransactionsContext";
 
 export const Summary = () => {
+  const data = useContext(TransactionsContext)
+
+  console.log(data);
+  
+
   return (
     <Container>
+      
       <div>
         <header>
           <p>Entradas</p>
